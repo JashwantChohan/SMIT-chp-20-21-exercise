@@ -20,3 +20,19 @@
 
 // document.write(`Your favourite mobile phone is: ${mobileInput}<br>`)
 // document.write(`length of a string is ${length}`)
+
+// 3. Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser .
+
+// let value = "Pakistani"
+// let indexNo = value.indexOf('n')
+//document.write(`String ${value}`)
+//document.write(`Index of n: ${indexNo}`)
+
+// 4. Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+
+// let value = "Hello World"
+// let indexNo = value.lastIndexOf('l')
+// document.write(`String ${value}<br>`)
+// document.write(`Index of n: ${indexNo}`)
