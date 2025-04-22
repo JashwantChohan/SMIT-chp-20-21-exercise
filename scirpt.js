@@ -84,4 +84,44 @@
 // document.write(`value: ${str}<br>`)
 // document.write(`Type: ${typeof(convertedStr)}`)
 
+// // 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
 
+// let input = prompt("Enter your name ")
+// let result = input.toUpperCase()
+// document.write(`user input : ${input}<br>`)
+// document.write(`Upercase : ${result}`)
+
+// 11. Write a program that takes user input. Convert and
+// show the input in title case.
+
+// var input = prompt("Enter something:");
+// var words = input.split(" ");
+// for (var i = 0; i < words.length; i++) {
+//   words[i] = words[i][0].toUpperCase() + words[i].slice(1).toLowerCase();
+// }
+// var titleCase = words.join(" ");
+// document.write("Title Case: " + titleCase);
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser
+
+// let val = 53.36
+// let str = val.toString()
+// let result = str.replace(".", "")
+// document.write(`Number: ${val}<br>`)
+// document.write(`Result : ${result}`)    
+
+
+// 13. Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@ .
+
+let userName = prompt("Enter user name ")
+if( userName == '@' && userName == '.' && userName == ',' &&  userName == '!' ){
+    alert("Enter a valid user name ")
+    console.log("enter a valid user name")
+}       
