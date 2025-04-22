@@ -120,8 +120,46 @@
 // among [@ . , !], prompt the user to enter a valid username.
 // For character codes of [@ .
 
-let userName = prompt("Enter user name ")
-if( userName == '@' && userName == '.' && userName == ',' &&  userName == '!' ){
-    alert("Enter a valid user name ")
-    console.log("enter a valid user name")
-}       
+// let userName = prompt("Enter user name ")
+// if (userName.includes('@') || userName.includes('.') || userName.includes(',') || userName.includes('!')) {
+//     alert("Enter a valid user name ")
+// } else {
+//     alert(`Hello ${userName}`)
+// }      
+
+
+// 14. You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability.
+
+let arr = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+let userInput = prompt("Welcome to ABC Bakery, What you want to order Sir/Ma'am").toLocaleLowerCase()
+switch (userInput) {
+    case "cake":
+        alert("cake is available in our bakery at index 0")
+        break;
+    case "apple pie":
+        alert("apple pie is available in our bakery at index 1")
+        break;
+    case "cookie":
+        alert("cookie is available in our bakery at index 2")
+        break;
+    case "chips":
+        alert("chips is available in our bakery at index 3")
+        break;
+    case "patties":
+        alert("patties is available in our bakery at index 4")
+        break;
+
+    default:
+        if( userInput !== "cake" || userInput !== "cookie" || userInput !== "apple pie" || userInput !== "chips" || userInput !== "patties" ){
+            alert(`We are sorry. ${userInput} is not available in our bakery `) 
+        }
+        break;
+}
