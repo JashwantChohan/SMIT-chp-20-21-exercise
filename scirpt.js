@@ -137,29 +137,78 @@
 // enters cookie, Cookie, COOKIE or coOkIE, program
 // should inform about its availability.
 
-let arr = ["cake", "apple pie", "cookie", "chips", "patties"]
+// let arr = ["cake", "apple pie", "cookie", "chips", "patties"]
 
-let userInput = prompt("Welcome to ABC Bakery, What you want to order Sir/Ma'am").toLocaleLowerCase()
-switch (userInput) {
-    case "cake":
-        alert("cake is available in our bakery at index 0")
-        break;
-    case "apple pie":
-        alert("apple pie is available in our bakery at index 1")
-        break;
-    case "cookie":
-        alert("cookie is available in our bakery at index 2")
-        break;
-    case "chips":
-        alert("chips is available in our bakery at index 3")
-        break;
-    case "patties":
-        alert("patties is available in our bakery at index 4")
-        break;
+// let userInput = prompt("Welcome to ABC Bakery, What you want to order Sir/Ma'am").toLocaleLowerCase()
+// switch (userInput) {
+//     case "cake":
+//         alert("cake is available in our bakery at index 0")
+//         break;
+//     case "apple pie":
+//         alert("apple pie is available in our bakery at index 1")
+//         break;
+//     case "cookie":
+//         alert("cookie is available in our bakery at index 2")
+//         break;
+//     case "chips":
+//         alert("chips is available in our bakery at index 3")
+//         break;
+//     case "patties":
+//         alert("patties is available in our bakery at index 4")
+//         break;
 
-    default:
-        if( userInput !== "cake" || userInput !== "cookie" || userInput !== "apple pie" || userInput !== "chips" || userInput !== "patties" ){
-            alert(`We are sorry. ${userInput} is not available in our bakery `) 
-        }
-        break;
+//     default:
+//         if( userInput !== "cake" || userInput !== "cookie" || userInput !== "apple pie" || userInput !== "chips" || userInput !== "patties" ){
+//             alert(`We are sorry. ${userInput} is not available in our bakery `) 
+//         }
+
+
+// /15. Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document./         break;
+// // }
+
+
+let password = prompt("Enter your password");
+let hasLetter = false;
+let hasNumber = false;
+let isvalid = true;
+
+if (password.length <= 6) {
+    isvalid = false;
+}
+
+let firstLetterChar = password.charCodeAt(0);
+
+if (firstLetterChar >= 48 && firstLetterChar <= 57) {
+    isvalid = false;
+}
+
+for (let i = 0; i < password.length; i++) {
+    let ascii = password.charCodeAt(i);
+
+    if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
+        hasLetter = true;
+    } else if (ascii >= 48 && ascii <= 57) {
+        hasNumber = true;
+    }
+}
+
+if (!hasLetter || !hasNumber) {
+    isvalid = false;
+}
+
+if (isvalid) {
+    alert(`Password accepted: ${password}`);
+} else {
+    alert(`Invalid password! Must: 
+- Be at least 6 characters 
+- Contain both letters and numbers 
+- Not start with a number`);
 }
