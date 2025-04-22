@@ -175,40 +175,40 @@
 // // }
 
 
-let password = prompt("Enter your password");
-let hasLetter = false;
-let hasNumber = false;
-let isvalid = true;
+// let password = prompt("Enter your password");
+// let hasLetter = false;
+// let hasNumber = false;
+// let isvalid = true;
 
-if (password.length <= 6) {
-    isvalid = false;
-}
+// if (password.length <= 6) {
+//     isvalid = false;
+// }
 
-let firstLetterChar = password.charCodeAt(0);
+// let firstLetterChar = password.charCodeAt(0);
 
-if (firstLetterChar >= 48 && firstLetterChar <= 57) {
-    isvalid = false;
-}
+// if (firstLetterChar >= 48 && firstLetterChar <= 57) {
+//     isvalid = false;
+// }
 
-for (let i = 0; i < password.length; i++) {
-    let ascii = password.charCodeAt(i);
+// for (let i = 0; i < password.length; i++) {
+//     let ascii = password.charCodeAt(i);
 
-    if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
-        hasLetter = true;
-    } else if (ascii >= 48 && ascii <= 57) {
-        hasNumber = true;
-    }
-}
+//     if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
+//         hasLetter = true;
+//     } else if (ascii >= 48 && ascii <= 57) {
+//         hasNumber = true;
+//     }
+// }
 
-if (!hasLetter || !hasNumber) {
-    isvalid = false;
-}
+// if (!hasLetter || !hasNumber) {
+//     isvalid = false;
+// }
 
-if (isvalid) {
-    alert(`Password accepted: ${password}`);
-} else {
-    alert(`Invalid password! Must: 
-- Be at least 6 characters 
-- Contain both letters and numbers 
-- Not start with a number`);
-}
+// if (isvalid) {
+//     alert(`Password accepted: ${password}`);
+// } else {
+//     alert(`Invalid password! Must: 
+// - Be at least 6 characters 
+// - Contain both letters and numbers 
+// - Not start with a number`);
+// }
