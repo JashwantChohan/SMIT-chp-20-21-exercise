@@ -212,3 +212,18 @@
 // - Contain both letters and numbers 
 // - Not start with a number`);
 // }
+
+
+// 16. Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+// let str = "University of Karachi"
+// let strConverted = str.split("")
+// for(i = 0 ; i < strConverted.length; i ++){
+//     document.write(strConverted[i] + "<br>")
+//     // console.log(strConverted[i])
+// }
+
+
