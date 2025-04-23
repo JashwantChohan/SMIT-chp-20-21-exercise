@@ -239,7 +239,7 @@
 // lazy dog”. Write a program to count number of
 // occurrences of word “the” in given string.
 
-let str = "The quick brown fox jumps over the lazy dog"
+// let str = "The quick brown fox jumps over the lazy dog"
 
-str.split("the").length - 1
-console.log(result)
+// let result = str.split("the").length - 1
+// console.log(result)
