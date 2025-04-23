@@ -227,3 +227,19 @@
 // }
 
 
+// 17. Write a program to display the last character of a user
+// input.
+
+// let str = "Pakistan"
+// let result = str.slice(-1)
+// console.log(result)
+
+
+// 18. You have a string “The quick brown fox jumps over the
+// lazy dog”. Write a program to count number of
+// occurrences of word “the” in given string.
+
+let str = "The quick brown fox jumps over the lazy dog"
+
+str.split("the").length - 1
+console.log(result)
